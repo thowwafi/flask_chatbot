@@ -5,12 +5,13 @@ from load_vector import loadVectorIndex
 import os
 import tiktoken
 from createVectorIndex import model_name
+from decouple import config
 
 app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
+os.environ["OPENAI_API_KEY"] = config('OPENAI_API_KEY')
 
 @app.route('/')
 def hello_world():

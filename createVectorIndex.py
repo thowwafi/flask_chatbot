@@ -3,9 +3,10 @@ from llama_index import load_index_from_storage
 from langchain import OpenAI
 import sys
 import os
+from decouple import config
 
 
-os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
+os.environ["OPENAI_API_KEY"] = config("OPENAI_API_KEY")
 model_name = "text-ada-001"
 
 def createVectorIndex(path):
