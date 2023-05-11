@@ -5,8 +5,8 @@ import sys
 import os
 
 
-os.environ["OPENAI_API_KEY"] = "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"
-
+os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
+model_name = "text-ada-001"
 
 def createVectorIndex(path):
     max_input = 4096
@@ -15,7 +15,7 @@ def createVectorIndex(path):
     max_chunk_overlap = 20
 
     prompt_helper = PromptHelper(max_input, tokens, chuck_size, max_chunk_overlap, chunk_size_limit=chuck_size)
-    llmPredictor = LLMPredictor(llm=OpenAI(temperature=0, model_name="text-ada-001", max_tokens=tokens))
+    llmPredictor = LLMPredictor(llm=OpenAI(temperature=0, model_name=model_name, max_tokens=tokens))
 
     docs = SimpleDirectoryReader(path).load_data()
     service_context = ServiceContext.from_defaults(llm_predictor=llmPredictor, prompt_helper=prompt_helper)
