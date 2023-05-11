@@ -9,7 +9,7 @@ app = Flask(__name__)
 app.config["DEBUG"] = True
 
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = "OPENAI_API_KEY"
 
 @app.route('/')
 def hello_world():
