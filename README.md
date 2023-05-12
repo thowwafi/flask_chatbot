@@ -4,37 +4,45 @@
 
 ## Installation
 
-1. Clone this repository:
-    ```bash
-    git clone
-    ```
+1. Clone this repository
 2. Create Python Virtual Environment:
     ```bash
     python3 -m venv venv
     ```
 3. Activate Virtual Environment:
-    Linux
-    ```bash
-    source venv/bin/activate
-    ```
-    Windows
+    - Windows
     ```bash
     venv\Scripts\activate
     ```
+    - Linux
+    ```bash
+    source venv/bin/activate
+    ```
+
 4. Install dependencies:
     ```bash
     pip install -r requirements.txt
     ```
 5. Run the app:
     ```bash
-    flask --app app run
+    flask --app app run --host 0.0.0.0
     ```
+    or
+    ```bash
+    python -m flask --app app run --host 0.0.0.0
+    ```
+
 6. Open the app in your browser: http://localhost:5000
 
 
 ## Create new vector index
 1. Upload your txt files to the folder `Source/`
 2. Activate the virtual environment
+    - Windows
+    ```bash
+    venv\Scripts\activate
+    ```
+    - Linux
     ```bash
     source venv/bin/activate
     ```
@@ -47,7 +55,7 @@
     - if the app is running in a terminal, press `Ctrl+C` to stop the app
     - run the app again
         ```bash
-        flask --app app run
+        flask --app app run --host 0.0.0.0
         ```
 
 
