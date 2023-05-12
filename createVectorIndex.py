@@ -7,7 +7,7 @@ from decouple import config
 
 
 os.environ["OPENAI_API_KEY"] = config("OPENAI_API_KEY")
-model_name = "text-ada-001"
+model_name = config("MODEL_NAME")
 
 def createVectorIndex(path):
     max_input = 4096
