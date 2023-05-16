@@ -21,7 +21,13 @@
 
 4. Install dependencies:
     ```bash
-    pip install -r requirements.txt
+    pip install gpt_index
+    pip install llama_index
+    pip install langchain
+    pip install flask
+    pip install python-decouple
+    pip install pymongo
+    pip install streamlit
     ```
 5. Run the app:
     ```bash
