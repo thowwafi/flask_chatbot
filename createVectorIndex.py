@@ -36,4 +36,6 @@ def loadVectorIndex(path):
 
 if __name__ == "__main__":
     path = sys.argv[1]
+    print("Creating Vector Index")
     vectorIndex = createVectorIndex(path)
+    print("Vector Index Created")
