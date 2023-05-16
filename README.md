@@ -40,6 +40,16 @@
 
 6. Open the app in your browser: http://localhost:5000
 
+7. Run Streamlit App (Web App Interface):
+    ```bash
+    streamlit run streamlit_app.py
+    ```
+    or
+    ```bash
+    python -m streamlit run streamlit_app.py
+    ```
+8. Open the app in your browser: http://localhost:8501
+
 
 ## Create new vector index
 1. Upload your txt files to the folder `Source/`
