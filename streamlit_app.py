@@ -11,7 +11,7 @@ st.markdown('---')
 st.header('Vector Index')
 st.markdown('Click the button below to rebuild the vector index.')
 if st.button('Rebuild Vector Index'):
-    os.system('python3 createVectorIndex.py Store')
+    os.system('python createVectorIndex.py Store')
     st.info('Vector Index Rebuilded.')
 # Add data
 st.header('Add Data')
