@@ -3,7 +3,7 @@ import streamlit as st
 
 
 # App framework
-st.title('🦜🔗 ChatBot - Source Data')
+st.title('ChatBot - Build Vector Index')
 st.markdown('This is a simple app to show the source data for the ChatBot.')
 st.markdown('---')
 
